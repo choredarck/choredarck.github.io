@@ -1,11 +1,312 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Prueba GitHub Pages</title>
+  <meta charset="UTF-8" />
+  <title>Omar Nuñez | Embedded & Full-Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de desarrollador de sistemas embebidos y full-stack, especializado en firmware, IoT, comunicaciones industriales y Linux." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>¡Hola desde omarnunez.dev!</h1>
-  <p>Si ves este mensaje, tu página funciona correctamente.</p>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">
+        <span class="logo-mark">ON</span>
+        <span class="logo-text">Omar Nuñez</span>
+      </div>
+      <nav class="nav">
+        <a href="#hero">Inicio</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#blog">Notas técnicas</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-kicker">Embedded Systems & Full-Stack</p>
+          <h1>Diseño firmware, conectividad e integración de sistemas de punta a punta.</h1>
+          <p class="hero-subtitle">
+            Ingeniero de sistemas embebidos con experiencia en firmware para microcontroladores,
+            comunicaciones industriales (SPI, I²C, UART, RS-485, LoRaWAN), backend para IoT y
+            herramientas Linux. Me gusta construir soluciones completas: desde el driver hasta el dashboard.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">Ver proyectos</a>
+            <a href="#contact" class="btn ghost">Descargar CV</a>
+            <!-- Cambia ghost por link a tu CV en PDF cuando lo tengas -->
+          </div>
+          <div class="hero-links">
+            <!-- Pon aquí tus enlaces reales -->
+            <a href="https://github.com/tu-usuario" target="_blank" rel="noreferrer">GitHub</a>
+            <span>·</span>
+            <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noreferrer">LinkedIn</a>
+            <span>·</span>
+            <a href="mailto:tu.correo@example.com">Email</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-tag">Actualmente enfocado en</div>
+          <h2>Firmware, IoT & Linux</h2>
+          <ul class="hero-list">
+            <li>• STM32 + LoRaWAN (STM32WL)</li>
+            <li>• Drivers para sensores industriales (ADE9000, STPM32, VL53L4, NPK, Hall)</li>
+            <li>• Integración con brokers MQTT y backend de calibración</li>
+            <li>• Linux, toolchains, y construcción de sistemas tipo LFS</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills principales</h2>
+        <p class="section-subtitle">
+          Mezcla de firmware, comunicaciones industriales, IoT y desarrollo de herramientas de alto nivel.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Embedded & Firmware</h3>
+            <ul>
+              <li>C, C++, drivers de bajo nivel</li>
+              <li>STM32 (incl. STM32WL), microcontroladores varios</li>
+              <li>Manejo de registros, interrupciones, DMA</li>
+              <li>RTOS / superloop, pruebas de producción y validación</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Comunicaciones & Protocolos</h3>
+            <ul>
+              <li>SPI, I²C, UART, RS-485, Modbus, BACnet</li>
+              <li>LoRaWAN (clase A/C, ABP/OTAA)</li>
+              <li>TCP/UDP, sockets, análisis de tráfico con Wireshark</li>
+              <li>MQTT, HTTP/REST, integración con nubes IoT</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Linux & Tooling</h3>
+            <ul>
+              <li>Linux embebido, servicios en sistemas tipo OpenWRT</li>
+              <li>Construcción de toolchains, exploración Linux From Scratch</li>
+              <li>Shell scripting, automatización de pruebas</li>
+              <li>Git, GitFlow, CMake, debugging a bajo nivel</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Backend & Frontend</h3>
+            <ul>
+              <li>Node.js, Python para integración con MQTT/HTTP</li>
+              <li>APIs REST para gestión y monitoreo de dispositivos</li>
+              <li>Flutter para apps de escritorio / herramientas de calibración</li>
+              <li>HTML/CSS/JS, dashboards básicos para visualización</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Proyectos seleccionados</h2>
+        <p class="section-subtitle">
+          Algunos de los proyectos que muestran cómo conecto firmware, comunicaciones y backend.
+        </p>
+
+        <div class="projects-grid">
+          <!-- PROYECTO 1 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3>STM32WL LoRaWAN End-Node</h3>
+              <span class="project-tag">Firmware · IoT · LoRaWAN</span>
+            </div>
+            <p class="project-description">
+              Desarrollo de firmware para un nodo LoRaWAN basado en STM32WL, incluyendo drivers para sensores,
+              manejo de bajo consumo, y comunicación segura con un network server.
+            </p>
+            <ul class="project-details">
+              <li><strong>Rol:</strong> Diseño de arquitectura, implementación de firmware, validación y pruebas integrales.</li>
+              <li><strong>Tecnologías:</strong> C, STM32Cube, LoRaWAN stack, SPI/I²C, UART, Git.</li>
+              <li><strong>Highlights:</strong> optimización de consumo, manejo de reconexión, integración con gateway y backend MQTT.</li>
+            </ul>
+            <!-- <a href="#" class="project-link" target="_blank" rel="noreferrer">Ver código en GitHub</a> -->
+          </article>
+
+          <!-- PROYECTO 2 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Medidor de calidad eléctrica con ADE9000/STPM32</h3>
+              <span class="project-tag">Firmware · Drivers · Energía</span>
+            </div>
+            <p class="project-description">
+              Implementación de drivers para medidores de energía y calidad eléctrica, lectura de parámetros,
+              filtros y procesamiento básico para integrar con sistemas de monitoreo.
+            </p>
+            <ul class="project-details">
+              <li><strong>Rol:</strong> Desarrollo de drivers, pruebas de laboratorio y soporte a validación en campo.</li>
+              <li><strong>Tecnologías:</strong> C, SPI, MCU STM32, ADE9000/STPM32, herramientas de medición.</li>
+              <li><strong>Highlights:</strong> robustez ante ruido eléctrico, calibración y pruebas de producción.</li>
+            </ul>
+          </article>
+
+          <!-- PROYECTO 3 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Controlador UDP para simulador de vuelo</h3>
+              <span class="project-tag">Networking · C · Herramientas</span>
+            </div>
+            <p class="project-description">
+              Librería en C para controlar un simulador de vuelo mediante tramas UDP, integrando la documentación
+              del fabricante y análisis de tráfico con Wireshark.
+            </p>
+            <ul class="project-details">
+              <li><strong>Rol:</strong> Diseño del protocolo, implementación del cliente UDP y pruebas end-to-end.</li>
+              <li><strong>Tecnologías:</strong> C, sockets UDP, Wireshark, Linux.</li>
+              <li><strong>Highlights:</strong> análisis de tramas, tolerancia a errores en red, documentación técnica.</li>
+            </ul>
+          </article>
+
+          <!-- PROYECTO 4 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Backend & Dashboard para sensores IoT</h3>
+              <span class="project-tag">Full-Stack · MQTT · REST</span>
+            </div>
+            <p class="project-description">
+              Backend ligero para recibir datos de sensores vía MQTT/HTTP, almacenarlos y visualizarlos en un
+              dashboard simple. Incluye herramientas de calibración e inspección de datos.
+            </p>
+            <ul class="project-details">
+              <li><strong>Rol:</strong> Diseño de API, integración con broker, desarrollo de vistas y flujos de calibración.</li>
+              <li><strong>Tecnologías:</strong> Node.js / Python, MQTT, REST, HTML/CSS/JS o Flutter.</li>
+              <li><strong>Highlights:</strong> flujo completo dispositivo → broker → backend → dashboard.</li>
+            </ul>
+          </article>
+
+          <!-- PROYECTO 5 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Herramientas de prueba y servicios en Linux</h3>
+              <span class="project-tag">Linux · Scripting · Automatización</span>
+            </div>
+            <p class="project-description">
+              Scripts y servicios en Linux para automatizar pruebas, recolectar datos de dispositivos
+              y facilitar calibraciones y diagnósticos en producción.
+            </p>
+            <ul class="project-details">
+              <li><strong>Rol:</strong> Diseño de scripts, integración con dispositivos y documentación para el equipo.</li>
+              <li><strong>Tecnologías:</strong> Bash, Python, systemd, herramientas de red.</li>
+              <li><strong>Highlights:</strong> reducción de tiempo de pruebas y mejora en trazabilidad de fallas.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG / NOTAS TÉCNICAS -->
+    <section id="blog" class="section">
+      <div class="container">
+        <h2>Notas técnicas & artículos</h2>
+        <p class="section-subtitle">
+          Algunas ideas que me gusta documentar para compartir lo que aprendo en sistemas embebidos, IoT y Linux.
+        </p>
+
+        <div class="blog-grid">
+          <article class="blog-card">
+            <h3>Debug de un bus I²C ruidoso en hardware real</h3>
+            <p>
+              Estrategia para diagnosticar problemas en I²C: revisión de pull-ups, análisis con lógica,
+              revisión de tiempos y tratamiento de NACKs en firmware.
+            </p>
+            <!-- <a href="#" class="blog-link" target="_blank" rel="noreferrer">Leer artículo</a> -->
+          </article>
+
+          <article class="blog-card">
+            <h3>Diseñando un firmware LoRaWAN de bajo consumo</h3>
+            <p>
+              Consideraciones al diseñar un nodo LoRaWAN: ventanas RX, duty cycle, optimización de energía
+              y manejo de reconexiones al network server.
+            </p>
+          </article>
+
+          <article class="blog-card">
+            <h3>De pruebas manuales a herramientas de calibración en Linux</h3>
+            <p>
+              Cómo pasar de pruebas manuales a scripts y servicios en Linux que automaticen la calibración
+              y validación de dispositivos en producción.
+            </p>
+          </article>
+        </div>
+        <p class="section-note">
+          *Puedes enlazar estas notas a un blog en GitHub, Dev.to, Notion o Markdown en un repo.*
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p class="section-subtitle">
+          Abierto a roles como Embedded Software Engineer, IoT Developer o Full-Stack con enfoque a
+          sistemas conectados y dispositivos físicos.
+        </p>
+
+        <div class="contact-grid">
+          <div>
+            <h3>Hablemos</h3>
+            <p>
+              Si tu equipo necesita a alguien que pueda tomar un dispositivo desde el esquemático y
+              llevarlo hasta producción (con firmware, backend y herramientas de prueba), me interesa escucharte.
+            </p>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:tu.correo@example.com">tu.correo@example.com</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/tu-usuario" target="_blank" rel="noreferrer">github.com/tu-usuario</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noreferrer">linkedin.com/in/tu-perfil</a></li>
+              <!-- <li><strong>CV:</strong> <a href="link-a-tu-cv.pdf" target="_blank" rel="noreferrer">Descargar PDF</a></li> -->
+            </ul>
+          </div>
+
+          <form class="contact-form" action="mailto:tu.correo@example.com" method="post" enctype="text/plain">
+            <label>
+              Nombre
+              <input type="text" name="nombre" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Mensaje
+              <textarea name="mensaje" rows="4" required></textarea>
+            </label>
+            <button type="submit" class="btn primary full-width">Enviar mensaje</button>
+            <p class="form-note">
+              *Este formulario usa <code>mailto:</code>. Puedes reemplazarlo por un backend real cuando lo desees.*
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <span>© <span id="year"></span> Omar Nuñez. Todos los derechos reservados.</span>
+      <span class="footer-note">Embedded · IoT · Linux · Full-Stack</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
